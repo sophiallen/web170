@@ -7,17 +7,7 @@
     <link href="<?php bloginfo('template_directory');?>/style.css" rel="stylesheet">
 </head>
 <body>
-   <?php wp_nav_menu(array("menu" => "Main Menu")); ?>
-
-	<header>
-        <div class="title">
-        	<h1><a href="<?php bloginfo("url"); ?>">
-    			<?php bloginfo("name"); ?>
-            </a></h1>
-            <h2><?php bloginfo("description"); ?></h2>
-        </title>
-    </header>
-    
+    <?php include_once("header.php");?>
     <main>
         <?php if(have_posts()): while(have_posts()): the_post(); ?>
             <div class="post">
@@ -28,6 +18,8 @@
         	<p>Sorry you don't have posts :(</p>
         <?php endif; ?>
     </main>
+   <?php include_once("footer.php");?>
+
 </body>
 </html>
 

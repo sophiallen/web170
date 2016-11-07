@@ -121,3 +121,12 @@ div.post {
 	overflow: hidden;
 	display: block;
 }
+
+footer {
+	background-color: #424242;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	font-style: italic;
+}
