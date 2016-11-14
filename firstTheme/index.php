@@ -7,7 +7,8 @@
     <link href="<?php bloginfo('template_directory');?>/style.css" rel="stylesheet">
 </head>
 <body>
-    <?php include_once("header.php");?>
+    <?php get_header(); ?>
+    <?php get_sidebar(); ?>
     <main>
         <?php if(have_posts()): while(have_posts()): the_post(); ?>
             <div class="post">
@@ -18,7 +19,8 @@
         	<p>Sorry you don't have posts :(</p>
         <?php endif; ?>
     </main>
-   <?php include_once("footer.php");?>
+    
+   <?php get_footer();?>
 
 </body>
 </html>

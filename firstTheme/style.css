@@ -84,7 +84,7 @@ header a {
 
 main {
 	width: 65%;
-	margin: 3em auto;
+	margin: 3em;
 	padding: 4em;
 	background-color: white;
 	min-height: 600px;
@@ -115,11 +115,34 @@ main img {
 	border: transparent;
 }
 
+div.post #gallery-1 img {
+	border: transparent;
+	padding: 1.5em;
+	padding-top: 0;
+}
+
 div.post {
 /*	padding: 2em;
 	margin-bottom: 2em;*/
 	overflow: hidden;
 	display: block;
+}
+
+div#sidebar-primary, div.sidebar {
+	width: 15%;
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+    margin-top: 3em;
+    float: right;
+}
+
+div.sidebar div {
+	margin: 1em;
+}
+ 
+div#sidebar-primary ul {
+	padding-left: 1em;
 }
 
 footer {
