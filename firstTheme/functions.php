@@ -1,7 +1,7 @@
 <?php register_nav_menus(); 
 
 add_action( 'widgets_init', 'my_sidebar' );
-
+add_theme_support('post-thumbnails');
 
 function my_sidebar() {
  

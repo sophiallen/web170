@@ -85,6 +85,7 @@ header a {
 main {
 	width: 65%;
 	margin: 3em;
+	margin-bottom: 220px;
 	padding: 4em;
 	background-color: white;
 	min-height: 600px;
@@ -140,9 +141,44 @@ div#sidebar-primary, div.sidebar {
 div.sidebar div {
 	margin: 1em;
 }
+
+div.sidebar h4 {
+	font-size: 14px;
+	padding-bottom: .5em;
+}
+
+#sidebar-primary div.grofile-meta {
+	margin: 0;
+	margin-top: 1em;
+}
+
+#grofile-2 img {
+	max-width: 125px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#grofile-2 p {
+	font-size: 14px;
+	line-height: 1.25;
+}
+
+div#calendar_wrap {
+	margin: 0;
+	margin-top: 1em;
+}
  
 div#sidebar-primary ul {
 	padding-left: 1em;
+}
+
+div#sidebar-primary li {
+	font-size: 14px;
+}
+
+div#sidebar-primary th,div#sidebar-primary td {
+	padding: 2px;
 }
 
 footer {

@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title><?php bloginfo("name"); ?></title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="<?php bloginfo('template_directory');?>/style.css" rel="stylesheet">
-</head>
-<body>
+
     <?php get_header(); ?>
     <?php get_sidebar(); ?>
     <main>
