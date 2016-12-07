@@ -23,6 +23,10 @@
 			<?php if(get_the_tags()) { ?>
 				<p>Tags: <span> <?php the_tags(); ?></span> </p>
 			<?php }?>
+			<ul>
+				<?php previous_post_link('<li>%link</li>'), "< Previous Post" ?>
+				<?php next_post_link('<li>%link</li>'), "Next Post >" ?>
+			</ul>
 		</div>
 	</div>
 
