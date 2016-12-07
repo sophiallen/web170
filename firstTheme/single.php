@@ -1,20 +1,19 @@
-/**
- * Template for displaying single blog post
- */
-
+<!-- Template for displaying single posts -->
 <?php get_header(); ?>
+<?php get_sidebar(); ?>
 
+<main>
 <?php if ( have_posts() ) : while (have_posts()) : the_post(); ?>
 	<div class="single-post">
 		<?php the_post_thumbnail(); ?>
-		<?php the_title(); ?>
+		<h2><?php the_title(); ?></h2>
 
 		<!-- Metadata -->
 		<p>
-			<em>
+			<small>
 			Posted <time datetime="<?php the_time('Y-m-d'); ?>" pubdate="pubdate"> <?php the_time('M n'); ?></time>
 			| <?php comments_number('no comments', '1', '% comments'); ?>
-			</em>
+			</small>
 		</p>
 		
 		<?php the_content(); ?>
@@ -30,9 +29,7 @@
 <?php endwhile; else : ?>
 	<p><?php _e( "The post you're lookig for could not be found. "); ?></p>
 <?php endif ?>
+</main>
 
-<?php 
-get_sidebar();
-get_footer();
-?>
+<?php get_footer();?>
 

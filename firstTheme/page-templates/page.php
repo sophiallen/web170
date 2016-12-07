@@ -1,10 +1,10 @@
 <?php 
-	/*Template Name: Page*/
+/*
+    Template name: basic full-width template. 
+    
+*/
 
-
-	get_header();
-
-?>
+get_header(); ?>
 
 <?php get_sidebar(); ?>
 
@@ -15,7 +15,7 @@
             <p><?php the_content(); ?></p>
         </div>
     <?php endwhile; else: ?>
-    	<p>Sorry you don't have posts :(</p>
+    	<p>Sorry, no posts matched your criteria.</p>
     <?php endif; ?>
 </main>
 
