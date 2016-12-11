@@ -11,8 +11,8 @@
 		<!-- Metadata -->
 		<p>
 			<small>
-			Posted <time datetime="<?php the_time('Y-m-d'); ?>" pubdate="pubdate"> <?php the_time('M n'); ?></time>
-			| <?php comments_number('no comments', '1', '% comments'); ?>
+			Posted <time datetime="<?php the_time('Y m d'); ?>" pubdate="pubdate"> <?php the_time('M n'); ?></time>
+			| <?php comments_number('no comments', '1 comment', '% comments'); ?>
 			</small>
 		</p>
 		
@@ -23,15 +23,15 @@
 			<?php if(get_the_tags()) { ?>
 				<p>Tags: <span> <?php the_tags(); ?></span> </p>
 			<?php }?>
-			<ul>
-				<?php previous_post_link('<li>%link</li>'), "< Previous Post" ?>
-				<?php next_post_link('<li>%link</li>'), "Next Post >" ?>
+			<ul class="prevNextLinks">
+				<?php previous_post_link('<li>%link</li>', "< Previous Post") ?>
+				<?php next_post_link('<li>%link</li>', "Next Post >" )?>
 			</ul>
 		</div>
 	</div>
 
 <?php endwhile; else : ?>
-	<p><?php _e( "The post you're lookig for could not be found. "); ?></p>
+	<p><?php _e( "The post you're looking for could not be found. "); ?></p>
 <?php endif ?>
 </main>
 

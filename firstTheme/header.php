@@ -17,4 +17,7 @@
         <h2><?php bloginfo("description"); ?></h2>
     </title>
 </header>
+<div class="searchbar">
+    <?php get_search_form(); ?>
+</div>
     

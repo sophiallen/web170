@@ -1,7 +1,6 @@
 <?php 
 /*
     Template name: basic full-width template. 
-    
 */
 
 get_header(); ?>
@@ -26,7 +25,7 @@ get_header(); ?>
             <?php } ?>
 
             <p><?php the_content(); ?></p>
-            
+
         </div>
     <?php endwhile; else: ?>
     	<p>Sorry, no posts matched your criteria.</p>

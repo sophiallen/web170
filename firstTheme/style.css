@@ -82,6 +82,13 @@ header a {
     color: black;
 }
 
+.searchbar {
+	padding: .5em;
+	background-color: #aec0a3;
+	text-align: right;
+	padding-right: 1em;
+}
+
 main {
 	width: 65%;
 	margin: 3em;
@@ -94,6 +101,16 @@ main {
 
 main h2 {
 	margin-bottom: 1em;
+}
+
+main a {
+	color: #4e5e4f;
+	text-decoration: none;
+	font-style: bold;
+}
+
+main a:hover {
+	text-decoration: underline;
 }
 
 main img {
@@ -123,8 +140,9 @@ div.post #gallery-1 img {
 }
 
 div.post {
-/*	padding: 2em;
-	margin-bottom: 2em;*/
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid gainsboro;
 	overflow: hidden;
 	display: block;
 }
@@ -179,6 +197,10 @@ div#sidebar-primary li {
 
 div#sidebar-primary th,div#sidebar-primary td {
 	padding: 2px;
+}
+
+main ul.prevNextLinks {
+	list-style: none;
 }
 
 footer {
