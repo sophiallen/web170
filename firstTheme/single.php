@@ -21,7 +21,7 @@
 		<div class="post-footer">
 			<p>Categories: <?php the_category(', '); ?></p>
 			<?php if(get_the_tags()) { ?>
-				<p>Tags: <span> <?php the_tags(); ?></span> </p>
+				<p><span> <?php the_tags(); ?></span> </p>
 			<?php }?>
 			<ul class="prevNextLinks">
 				<?php previous_post_link('<li>%link</li>', "< Previous Post") ?>

@@ -115,10 +115,27 @@ main a:hover {
 
 main img {
 	float: left;
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
     padding-right: 1.5em;
     padding-bottom: 1.5em;
+}
+
+main strong image.small.alignright.wp-image-616.size-full {
+	width: 105px;
+	height: 105px;
+	float: right;
+}
+
+main image.right {
+	float: right;
+}
+
+main img.size-full {
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	height: auto;
 }
 
 main p {
@@ -201,6 +218,63 @@ div#sidebar-primary th,div#sidebar-primary td {
 
 main ul.prevNextLinks {
 	list-style: none;
+}
+
+
+main form {
+	width: 75%;
+	padding: 2em;
+	background-color: whitesmoke;
+}
+
+main form label {
+	padding-right: 1em;
+}
+
+.wpforms-one-half {
+	width: 50%;
+	margin-top: .5em;
+	margin-bottom: 1.5em;
+	display: inline-block;
+}
+
+.wpforms-one-half input {
+	margin-right: 20%;
+	padding: .25em;
+	width: 75%;
+}
+
+.wpforms-one-half label {
+	font-style: italic;
+}
+.wpforms-field-email {
+	margin-bottom: 1.5em;
+}
+
+.wpforms-field-email input {
+	padding: .25em;
+	width: 76%;
+}
+.wpforms-field-textarea label{
+ 	display: block;
+}
+
+.wpforms-field {
+	margin-bottom: 1.75em;
+}
+
+#wpform-field-hp {
+	display: none;
+}
+
+main form button {
+	padding: .5em;
+}
+
+main form textarea {
+	width: 88%;
+    min-height: 100px;
+    padding: .25em;
 }
 
 footer {
